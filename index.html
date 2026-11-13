@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ledgerra — Legal & Compliance Center</title>
+<meta name="description" content="Official privacy policy, terms of service, and open-source compliance portal for Ledgerra Android app.">
+<meta name="theme-color" content="#0c3b3a">
+<style>
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --fg: #16181d;
+  --muted: #5b6472;
+  --line: #e2e6ec;
+  --accent: #0c3b3a;
+  --accent-soft: #eef4f3;
+  --code-bg: #f4f6f8;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #12141a;
+    --fg: #e7eaee;
+    --muted: #a2acbb;
+    --line: #2a2f38;
+    --accent: #7fd4cd;
+    --accent-soft: #17211f;
+    --code-bg: #1c1f27;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 3rem 1.25rem 5rem;
+  background: var(--bg);
+  color: var(--fg);
+  font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+main { max-width: 46rem; margin: 0 auto; }
+nav.legal-nav {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--line);
+}
+nav.legal-nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--muted);
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+  background: var(--code-bg);
+}
+nav.legal-nav a.active {
+  color: #ffffff;
+  background: var(--accent);
+}
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .25rem; letter-spacing: -.02em; }
+h2 { font-size: 1.3rem; margin: 2.5rem 0 .75rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+h3 { font-size: 1.05rem; margin: 1.75rem 0 .5rem; }
+p, li { color: var(--fg); }
+p { margin: .75rem 0; }
+strong { font-weight: 650; }
+a { color: var(--accent); }
+code { background: var(--code-bg); padding: .12em .38em; border-radius: 4px; font-size: .9em; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
+ul, ol { padding-left: 1.35rem; }
+li { margin: .3rem 0; }
+table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: .93rem; }
+th, td { text-align: left; vertical-align: top; padding: .6rem .7rem; border-bottom: 1px solid var(--line); }
+th { color: var(--muted); font-weight: 600; font-size: .78rem; letter-spacing: .04em; text-transform: uppercase; }
+blockquote { margin: 1rem 0; padding: .1rem 0 .1rem 1rem; border-left: 3px solid var(--accent); color: var(--muted); }
+.portal-card {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  background: var(--code-bg);
+}
+.portal-card h3 { margin-top: 0; }
+.portal-card a.button {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.5rem 1rem;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
+footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .88rem; }
+@media print { body { padding: 0; } nav.legal-nav { display: none; } }
+</style>
+</head>
+<body>
+<main>
+<nav class="legal-nav">
+  <a href="index.html" class="active">Legal Overview</a>
+  <a href="privacy-policy.html" class="">Privacy Policy</a>
+  <a href="terms-and-conditions.html" class="">Terms &amp; Conditions</a>
+</nav>
+
+<h1>Ledgerra — Legal &amp; Policy Center</h1>
+<p>Welcome to the official legal and compliance documentation portal for <strong>Ledgerra</strong> (<code>com.ledgerra.app</code>), a private, offline-first expense tracking and personal finance manager for Android.</p>
+
+<div class="portal-card">
+  <h3>🔒 Privacy Policy</h3>
+  <p>Learn how Ledgerra protects your financial privacy through 100% on-device processing, zero telemetry, no central servers, and strict permission minimization.</p>
+  <a href="privacy-policy.html" class="button">Read Privacy Policy &rarr;</a>
+</div>
+
+<div class="portal-card">
+  <h3>📜 Terms and Conditions</h3>
+  <p>Review the terms governing the use of Ledgerra, our GNU Affero General Public License v3.0 (AGPL-3.0) distribution, and financial disclaimers.</p>
+  <a href="terms-and-conditions.html" class="button">Read Terms &amp; Conditions &rarr;</a>
+</div>
+
+<hr>
+<h2>Open Source &amp; Transparency</h2>
+<p>Ledgerra is free and open-source software. You are entitled to review, verify, and compile the entire source code independently from our GitHub repository:</p>
+<p><a href="https://github.com/rezoan-ferdose/ledgerra">https://github.com/rezoan-ferdose/ledgerra</a></p>
+
+<footer>
+  <strong>Ledgerra</strong> — private, offline-first personal finance tracking.<br>
+  Source repository: <a href="https://github.com/rezoan-ferdose/ledgerra">github.com/rezoan-ferdose/ledgerra</a> (AGPL-3.0)
+</footer>
+</main>
+</body>
+</html>

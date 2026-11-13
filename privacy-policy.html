@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ledgerra — Privacy Policy</title>
+<meta name="description" content="Privacy Policy for Ledgerra: local on-device processing, no accounts, and no data tracking.">
+<meta name="theme-color" content="#0c3b3a">
+<style>
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --fg: #16181d;
+  --muted: #5b6472;
+  --line: #e2e6ec;
+  --accent: #0c3b3a;
+  --accent-soft: #eef4f3;
+  --code-bg: #f4f6f8;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #12141a;
+    --fg: #e7eaee;
+    --muted: #a2acbb;
+    --line: #2a2f38;
+    --accent: #7fd4cd;
+    --accent-soft: #17211f;
+    --code-bg: #1c1f27;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 3rem 1.25rem 5rem;
+  background: var(--bg);
+  color: var(--fg);
+  font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+main { max-width: 46rem; margin: 0 auto; }
+nav.legal-nav {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--line);
+}
+nav.legal-nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--muted);
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+  background: var(--code-bg);
+}
+nav.legal-nav a.active {
+  color: #ffffff;
+  background: var(--accent);
+}
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .25rem; letter-spacing: -.02em; }
+h2 { font-size: 1.3rem; margin: 2.5rem 0 .75rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+h3 { font-size: 1.05rem; margin: 1.75rem 0 .5rem; }
+p, li { color: var(--fg); }
+p { margin: .75rem 0; }
+strong { font-weight: 650; }
+a { color: var(--accent); }
+code { background: var(--code-bg); padding: .12em .38em; border-radius: 4px; font-size: .9em; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
+ul, ol { padding-left: 1.35rem; }
+li { margin: .3rem 0; }
+table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: .93rem; }
+th, td { text-align: left; vertical-align: top; padding: .6rem .7rem; border-bottom: 1px solid var(--line); }
+th { color: var(--muted); font-weight: 600; font-size: .78rem; letter-spacing: .04em; text-transform: uppercase; }
+blockquote { margin: 1rem 0; padding: .1rem 0 .1rem 1rem; border-left: 3px solid var(--accent); color: var(--muted); }
+.portal-card {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  background: var(--code-bg);
+}
+.portal-card h3 { margin-top: 0; }
+.portal-card a.button {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.5rem 1rem;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
+footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .88rem; }
+@media print { body { padding: 0; } nav.legal-nav { display: none; } }
+</style>
+</head>
+<body>
+<main>
+<nav class="legal-nav">
+  <a href="index.html" class="">Legal Overview</a>
+  <a href="privacy-policy.html" class="active">Privacy Policy</a>
+  <a href="terms-and-conditions.html" class="">Terms &amp; Conditions</a>
+</nav>
+<h1>Privacy Policy — Ledgerra</h1>
+<p><strong>Effective date: 13 November 2026</strong></p>
+<p><strong>Applies to:</strong> Ledgerra for Android (<code>com.ledgerra.app</code>), including the Google Play build.</p>
+<p>Ledgerra is a personal finance tracker. It has no account system, no backend of its own, and</p>
+<p>no analytics. This policy explains exactly what the app touches and where that data goes.</p>
+<hr>
+<h2>1. The short version</h2>
+<ul>
+<li><strong>Your financial data stays on your device.</strong> Ledgerra has no servers, no accounts and no</li>
+<p>telemetry.</p>
+<li><strong>The Google Play build does not request SMS access at all.</strong> Google Play only grants</li>
+<p><code>READ_SMS</code> / <code>RECEIVE_SMS</code> to default SMS-handler apps, so the Play build removes both</p>
+<p>permissions and captures transactions from bank notifications, PDF statements, the share</p>
+<p>sheet and manual entry instead.</p>
+<li><strong>Nothing is collected by the developer.</strong> The app's author never receives your</li>
+<p>transactions, your categories, your accounts or your statistics.</p>
+<li>The only data that can ever leave the device is data <strong>you explicitly ask to be sent</strong> to</li>
+<p>a destination <strong>you choose</strong> (section 6).</p>
+</ul>
+<hr>
+<h2>2. What "no data collection" means here</h2>
+<p>Ledgerra reads financial information from your device in order to show it back to you. That</p>
+<p>information is processed <strong>entirely on your device</strong> and is never transmitted to the</p>
+<p>developer or to Google. Under Google's Data Safety definitions, information that is</p>
+<p>processed only on the device is not "collected".</p>
+<p>The app contains no analytics SDK, no crash-reporting SDK, no advertising SDK, no</p>
+<p>attribution SDK and no fingerprinting.</p>
+<hr>
+<h2>3. Data stored on your device</h2>
+<table><thead><tr>
+<th>Data</th>
+<th>Where it lives</th>
+<th>Why</th>
+</tr></thead><tbody>
+<tr><td>Transactions (amount, merchant, date, category, account)</td><td>App-private SQLite database (<code>Room</code>)</td><td>The timeline, analytics and budgets you see</td></tr>
+<tr><td>Categories, subcategories and merchant rules</td><td>App-private database</td><td>Your organisation of that data</td></tr>
+<tr><td>Accounts, balances and budget limits</td><td>App-private database</td><td>Balance and budget tracking</td></tr>
+<tr><td>App preferences (currency, theme, reminders, base currency)</td><td><code>DataStore</code> preferences file</td><td>Your settings</td></tr>
+<tr><td>AI model file (optional, ~1.6 GB, Qwen 2.5, Apache 2.0)</td><td>App-private storage</td><td>On-device AI chat, only if you ask for it</td></tr>
+<tr><td>App-lock state (on/off, timeout, last successful authentication time)</td><td><code>DataStore</code> preferences file</td><td>Knowing when to lock the app</td></tr>
+<tr><td>Optional cloud-backup credentials (Drive refresh token, WebDAV password)</td><td><code>EncryptedSharedPreferences</code>, AES-256 with a Keystore-held master key</td><td>So you are not asked for your password on every backup</td></tr>
+</tbody></table>
+<p>This data is inside the Android app sandbox. It is not readable by other apps. The app sets</p>
+<p><code>android:allowBackup="false"</code>, so Android's automatic cloud backup does not copy it.</p>
+<p>The app lock never handles a biometric secret itself: the check is performed by Android's</p>
+<p>own biometric prompt, and the app only records that it succeeded and when.</p>
+<hr>
+<h2>4. Permissions and special access, and exactly why each is used</h2>
+<p>The Google Play build of Ledgerra requests the following. Nothing else.</p>
+<table><thead><tr>
+<th>Permission / access</th>
+<th>Why Ledgerra needs it</th>
+<th>Is it required?</th>
+</tr></thead><tbody>
+<tr><td><strong>Notification access</strong> (<code>NotificationListenerService</code>, granted in Settings → Notifications → Device &amp; app notifications)</td><td>Reads the <em>confirmation text</em> of bank, card and UPI notifications so a payment can be turned into a transaction without you typing anything.</td><td>Required for automatic capture. The app still works without it — you can import PDF or CSV statements, or enter transactions manually.</td></tr>
+<tr><td><strong>Notifications</strong> (<code>POST_NOTIFICATIONS</code>)</td><td>Shows your transaction alerts and reminders, and confirms background work.</td><td>Optional; the app works without it.</td></tr>
+<tr><td><strong>Exact alarms</strong> (<code>SCHEDULE_EXACT_ALARM</code>)</td><td><strong>Not requested in the Play build.</strong> Daily reminders and webhook sync use standard inexact alarms (<code>setAndAllowWhileIdle</code>) and WorkManager.</td><td>n/a</td></tr>
+<tr><td><strong>Boot completed</strong> (<code>RECEIVE_BOOT_COMPLETED</code>)</td><td>Re-schedules those reminders after the device restarts.</td><td>Optional.</td></tr>
+<tr><td><strong>Biometrics</strong> (<code>USE_BIOMETRIC</code>)</td><td>Unlocks the app behind fingerprint/face unlock when you enable app lock.</td><td>Optional; only if you turn on app lock.</td></tr>
+<tr><td><strong>Internet</strong> (<code>INTERNET</code>)</td><td>Only for the optional features listed in section 6: downloading the AI model, currency exchange rates, and the backup/webhook destinations you configure.</td><td>Optional; all core features work fully offline.</td></tr>
+<tr><td><strong>Files and photos</strong></td><td>None. Ledgerra reads files only through Android's document picker, which hands over a single file you chose. No storage permission is declared.</td><td>n/a</td></tr>
+<tr><td><strong>SMS</strong></td><td><strong>Not requested in the Play build.</strong> The F-Droid and GitHub-release builds of Ledgerra do offer optional read-only SMS access for automatic capture, because Google Play restricts that permission to default SMS-handler apps.</td><td>n/a</td></tr>
+<tr><td><strong>Advertising ID</strong> (<code>AD_ID</code>)</td><td>Explicitly <strong>removed</strong> from the manifest (<code>tools:node="remove"</code>).</td><td>Never requested.</td></tr>
+</tbody></table>
+<h3>Notification access, in detail</h3>
+<p>This is the most sensitive capability the app has, so it is worth being precise.</p>
+<ul>
+<li>Ledgerra sees only notifications posted by other apps, and only the text of those</li>
+<p>notifications.</p>
+<li>It looks for text that matches a known bank or UPI payment format (an amount, a</li>
+<p>merchant, a transaction keyword).</p>
+<li>Matching text is reduced to a transaction row: amount, merchant, date, category.</li>
+<li><strong>The full notification body is not stored.</strong> The notification title and body are</li>
+<p>discarded after parsing; only the extracted transaction is written to the database.</p>
+<li>You can revoke notification access at any time in Android Settings. The app stops</li>
+<p>capturing immediately.</p>
+</ul>
+<hr>
+<h2>5. The on-device AI assistant (optional)</h2>
+<ul>
+<li>The assistant uses the Qwen 2.5 model running <strong>locally</strong> through LiteRT-LM.</li>
+<li>The model file is downloaded once from Hugging Face on your explicit request. The</li>
+<p>download is a file transfer; it does not carry any of your data.</p>
+<li>Inference runs on your device. Your transactions, categories and chat are never sent to</li>
+<p>a server for processing.</p>
+<li>Chat messages are held in the local database so you can scroll back through them. They</li>
+<p>are deleted with the rest of your data.</p>
+</ul>
+<hr>
+<h2>6. The only ways data can leave your device</h2>
+<p>Ledgerra has no backend, so it cannot send your data anywhere by itself. Data leaves only</p>
+<p>when you turn on a feature <strong>and</strong> supply the destination. Every one of these is off by</p>
+<p>default.</p>
+<h3>6.1 Cloud backup (optional)</h3>
+<p>You can back up your encrypted database to a destination you control:</p>
+<ul>
+<li><strong>Google Drive</strong> — via the Drive <code>appDataFolder</code> scope. The backup is stored in your</li>
+<p>Drive in a hidden application-data folder that other apps and other users cannot see or</p>
+<p>list. Ledgerra uses <code>drive.appdata</code> only; it cannot read or write your personal Drive</p>
+<p>files.</p>
+<li><strong>WebDAV</strong> — a server you specify.</li>
+</ul>
+<p>The backup archive is encrypted <strong>before</strong> it is written — end-to-end, with AES-256-GCM and</p>
+<p>a key derived from the passphrase you set in the cloud-backup settings. The passphrase</p>
+<p>never leaves the device, and it is needed to restore a backup; there is no way to recover</p>
+<p>a backup without it. Google Drive sign-in uses Google Sign-In, so Ledgerra never sees</p>
+<p>your Google password.</p>
+<h3>6.2 Webhooks (optional)</h3>
+<p>You can configure Ledgerra to POST transaction summaries to an HTTP endpoint you specify.</p>
+<p>That endpoint receives the data you chose to send it. Ledgerra cannot verify the security</p>
+<p>of an endpoint you configure, and that endpoint is outside the app's and the developer's</p>
+<p>control. Webhooks are disabled until you configure one.</p>
+<h3>6.3 Currency exchange rates (optional)</h3>
+<p>If you enable multi-currency mode, the app requests exchange rates from a public rates</p>
+<p>API. The request carries no transaction data — only the currency pair being asked about.</p>
+<h3>6.4 Google Play services (Play build only)</h3>
+<p>The Play build includes Google's In-App Update and In-App Review libraries, which are used</p>
+<p>for app-update prompts and optional review prompts. These are Google components operating</p>
+<p>under Google's own policies; Ledgerra does not use them to send your financial data</p>
+<p>anywhere.</p>
+<hr>
+<h2>7. Data retention and deletion</h2>
+<ul>
+<li><strong>Uninstalling the app removes all of its data</strong>, including the database, preferences,</li>
+<p>the AI model and any locally cached backups.</p>
+<li><strong>You can delete individual transactions</strong> and whole categories/accounts at any time in</li>
+<p>the app.</p>
+<li>Deleted transactions are soft-deleted in the database so they can be restored briefly;</li>
+<p>they are excluded from every balance, total and report while deleted.</p>
+<li><strong>Export before uninstalling</strong> if you want to keep a copy. Ledgerra can export</li>
+<p>transactions to CSV.</p>
+<li>Ledgerra cannot delete data that has already been sent to a third-party destination you</li>
+<p>configured (Drive, WebDAV, a webhook endpoint). Delete it there too.</p>
+</ul>
+<hr>
+<h2>8. Children's privacy</h2>
+<p>Ledgerra is not directed at children under 13 and is not intended for use by children.</p>
+<p>Because the app collects no data and has no accounts, it does not knowingly collect</p>
+<p>information from anyone, including children.</p>
+<hr>
+<h2>9. Security</h2>
+<ul>
+<li>All app data is inside the Android app sandbox.</li>
+<li>The app requests <code>allowBackup="false"</code>, so Android does not copy the database to cloud</li>
+<p>backup.</p>
+<li>The advertising ID permission is explicitly removed from the manifest.</li>
+<li>Optional app lock is enforced by Android's own biometric prompt — the biometric</li>
+<p>credential never enters the app, and the app only records that the check succeeded and</p>
+<p>when.</p>
+<li>Optional cloud backup credentials are stored in <code>EncryptedSharedPreferences</code></li>
+<p>(AES-256, with the master key held in the Android Keystore).</p>
+<li>Optional cloud backups are encrypted before upload.</li>
+<li>Ledgerra is free and open source under the AGPL-3.0 licence. You can read the code,</li>
+<p>build it yourself and check every claim on this page.</p>
+</ul>
+<hr>
+<h2>10. Changes to this policy</h2>
+<p>Material changes will be published in the app's release notes and in the repository</p>
+<p>history for this file, and the "effective date" at the top will be updated.</p>
+<hr>
+<h2>11. Contact</h2>
+<p>Questions about this policy, or a privacy request, can be raised through the support</p>
+<p>contact listed on the Google Play listing for Ledgerra, or via the issue tracker at:</p>
+<p>https://github.com/rezoan-ferdose/ledgerra/issues</p>
+<hr>
+<p><em>Ledgerra — private, offline-first expense tracking.</em></p>
+<footer>
+  <strong>Ledgerra</strong> — private, offline-first personal finance tracking.<br>
+  Source repository: <a href="https://github.com/rezoan-ferdose/ledgerra">github.com/rezoan-ferdose/ledgerra</a> (AGPL-3.0)
+</footer>
+</main>
+</body>
+</html>
